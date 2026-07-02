@@ -1,0 +1,213 @@
+/*Reseteo básico*/
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/*General*/
+body{
+  display:flex;
+  flex-direction:column;
+  min-height:100vh;
+  font-family:times, sans-serif;
+}
+
+.navbar{
+  background-color:rgb(201, 145, 94);
+  padding:20px;
+  display:flex;
+  align-items:center;
+}
+
+.navbar ul{
+  display:flex;
+  justify-content:center;
+  list-style:none;
+  gap:30px;
+  flex:1;
+}
+
+.navbar a{
+  color:rgb(50, 86, 102);
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.header{
+  text-align:center;
+  padding:40px;
+}
+/*imagen responsive*/
+.cont-imagen{
+  width:90%;
+  max-width:900px;
+  margin:20px auto;
+}
+
+.imagen-responsive{
+  width:100%;
+  height:auto;
+  border-radius: 100px;
+}
+
+/*video responsive*/
+.cont-video{
+  width:90%;
+  max-width:900px;
+  margin:20px auto;
+  position:relative;
+  padding-bottom:56.25%;
+  height:0;
+}
+
+.cont-video iframe{
+  .cont-video iframe{
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+} 
+}
+
+/*Formulario*/
+.formulario{
+  width: 50%;
+  margin: 30px auto;
+  background:rgb(219, 139, 63);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px slategrey;
+}
+
+.formulario h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input{
+  padding: 10px;
+  border-radius: 5px;
+  background:1px  khaki;
+}
+
+/*Botón*/
+button{
+  padding:10px 15px;
+  border:none;
+  cursor:pointer;
+  border-radius:8px;
+  background: rgb(224, 229, 231);
+  color: rgb(216, 219, 29);
+}
+
+button:hover{
+  background: lightgreen;
+}
+
+#respuesta{
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+footer{
+  text-align:center;
+  padding:15px;
+  background: rgb(67, 143, 96);
+}
+
+/* Ícono ☰ */
+.menu-toggle{
+  display:none;
+  cursor:pointer;
+  font-size:22px;
+  color:white;
+}
+
+/* Estilos exclusivos para hoja2.html */
+.hoja2{
+  background-color:rgb(50, 86, 102); 
+  font-family:'Times', serif;
+  color:goldenrod;
+  padding:20px;
+}
+
+.hoja2 h3{
+  color:maroon; 
+  font-family:'Arial', sans-serif;
+}
+
+.hoja2 p,
+.hoja2 li{
+  color:black; 
+  
+}
+
+/* Estilos exclusivos para hoja3.html */
+.hoja3 h3 {
+  background-color: rgb(50, 86, 102);
+   font-family:'Times', serif;
+  color:goldenrod;
+  padding:20px;
+
+}
+
+.hoja3 p {
+    color:maroon; 
+  font-family:'Times', sans-serif;
+    color:maroon; 
+  font-family:'Arial', sans-serif;
+
+}
+
+hoja3 p,
+.hoja3 li{
+  color:black;
+}
+   
+
+/*Responsive*/
+@media(max-width:600px){
+  .navbar{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .navbar ul{
+    flex-direction:column;
+    align-items:flex-start;
+    display:none; /* oculto por defecto */
+    background-color:sienna;
+    width:100%;
+    padding:10px;
+  }
+
+  .navbar ul.active{
+    display:flex; /* se muestra al hacer clic */
+  }
+
+  .menu-toggle{
+    display:inline-block; /* aparece el ícono ☰ */
+    margin-bottom:10px;
+  }
+
+  .header h1{
+    font-size:20px;
+  }
+
+  button{
+    width:80%;
+  }
+
+  .formulario{
+    width: 90%;
+  }
+}
