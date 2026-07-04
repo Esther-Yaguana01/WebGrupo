@@ -2,7 +2,7 @@
 $servidor = "127.0.0.1";
 $usuario="root";
 $password="";
-$baseDatos="ejemplo";
+$baseDatos="mi_examen";
 
 $conn=mysqli_connect(
     $servidor,
@@ -13,4 +13,5 @@ $conn=mysqli_connect(
 if(!$conn){
     die("Error de conexion");
 }
+mysqli_set_charset($conn, "utf8mb4");
 ?>
